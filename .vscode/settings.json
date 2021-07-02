@@ -1,0 +1,16 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }, //保存したときに自動で直してくれる設定
+  "eslint.validate": ["javascript"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", //デフォルトがPritter
+  "css.validate": false, //@tailwind がないと警告が出る問題対処
+  "stylelint.enable": true, //@tailwind がないと警告が出る問題対処
+  "editor.quickSuggestions": {
+    "strings": true
+  }, //@tailwind 補完機能拡張効くように設定
+  "javascript.preferences.importModuleSpecifier": "non-relative", //自動 import の優先パス スタイル 絶対パスに。
+  "files.encoding": "utf8",
+  "typescript.preferences.importModuleSpecifier": "non-relative" //自動 import の優先パス スタイル 絶対パスに。
+}

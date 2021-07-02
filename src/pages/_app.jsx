@@ -1,0 +1,10 @@
+import "src/styles/tailwind.css";
+import "src/styles/globals.css";
+
+import React from "react";
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
