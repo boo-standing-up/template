@@ -1,15 +1,16 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  purge: {
-    content: [
-      "./src/pages/**/*.{js,ts,jsx,tsx}",
-      "./src/components/**/*.{js,ts,jsx,tsx}",
-    ],
-    options: {
-      safelist: ["bg-gray-50", "bg-indigo-50"],
-    },
-  },
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: false,
   theme: {
+    screens: {},
+    colors: {
+      //この辺は使いたい色を指定//
+      indigp: colors.indigo,
+      yellow: colors.amber,
+      gray: colors.gray,
+    },
     extend: {},
   },
   variants: {
